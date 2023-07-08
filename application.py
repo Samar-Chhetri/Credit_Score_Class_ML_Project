@@ -57,8 +57,8 @@ def predict_credit_score():
         else:
             result = "The credit score is 'STANDARD'"
 
-        return render_template('home.html', result= result)
+        return render_template('home.html', results= result)
     
 
 if __name__=="__main__":
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', port=8000)
